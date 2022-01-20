@@ -5,7 +5,7 @@
 *Downloader* 
 :)
 <hr>
-A chrome extension to download tokyomotion video directly from browser, via cURL or Aria2.
+A chrome extension for *enjoying* tokyomotion video directly from browser, via cURL or Aria2.
 
 **Unlike youtube-dl this is able to download HD video.**
 
