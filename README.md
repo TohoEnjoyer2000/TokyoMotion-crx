@@ -13,7 +13,6 @@ A chrome extension for *enjoying* tokyomotion video directly from browser, via c
 
 ## Installation
 
-The avaible settings are currently only:
 -   Go to chrome extensions tab
 -   Load unpacked extension
 -   select tokyomotion-crx folder (manifetst.json folder)
