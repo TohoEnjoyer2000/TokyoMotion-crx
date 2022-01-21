@@ -8,15 +8,16 @@
         "activeTab"
     ],
     "action": {
-        "default_popup": "index.html"
+        "default_popup": "popup/index.html"
     },
     "content_scripts": [
         {
             "matches": [
-                "https://www.tokyomotion.net/video/*"
+                "https://www.tokyomotion.net/video/*",
+                "https://www.osakamotion.net/video/*"
             ],
             "js": [
-                "index.js"
+                "background/index.js"
             ]
         }
     ],

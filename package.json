@@ -1,0 +1,21 @@
+{
+  "name": "tokyomotion-crx",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "bash build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TohoEnjoyer2000/TokyoMotion-crx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TohoEnjoyer2000/TokyoMotion-crx/issues"
+  },
+  "homepage": "https://github.com/TohoEnjoyer2000/TokyoMotion-crx#readme",
+  "dependencies": {
+    "uglify-js": "^3.14.5"
+  }
+}
