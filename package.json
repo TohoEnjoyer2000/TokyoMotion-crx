@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "bash build.sh",
+    "build": "gulp",
     "gulp": "gulp"
   },
   "repository": {

@@ -2,15 +2,12 @@ const babel = require('gulp-babel');
 const gulp = require('gulp')
 const fs = require('fs')
 
-function clean() {
-    return new Promise((resolve, reject) => {
-        if (fs.existsSync('./dist')) {
-            fs.rmdir('./dist', (err) => {
-                err ? reject() : resolve()
-            })
-        }
-        resolve()
-    })
+function clean(cb) {
+    if (fs.existsSync('./dist')) {
+        fs.rmSync('./dist', { recursive: true })
+        cb()
+    }
+    cb()
 }
 
 function transpile() {
@@ -21,7 +18,7 @@ function transpile() {
         .pipe(gulp.dest('./dist/'))
 }
 
-function copyAllFiles() {
+function build() {
     return gulp
         .src([
             'src/**/*.png',
@@ -32,4 +29,4 @@ function copyAllFiles() {
         .pipe(gulp.dest('./dist/'));
 }
 
-exports.default = gulp.series(transpile, clean, copyAllFiles)
+exports.default = gulp.series(clean, transpile, build)
