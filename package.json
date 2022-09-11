@@ -1,9 +1,11 @@
 {
   "name": "tokyomotion-crx",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
+  "main": "gulpfile.js",
   "scripts": {
-    "build": "bash build.sh"
+    "build": "bash build.sh",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,11 @@
     "url": "https://github.com/TohoEnjoyer2000/TokyoMotion-crx/issues"
   },
   "homepage": "https://github.com/TohoEnjoyer2000/TokyoMotion-crx#readme",
-  "dependencies": {
-    "uglify-js": "^3.14.5"
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "del": "^7.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-imagemin": "^7.1.0"
   }
 }

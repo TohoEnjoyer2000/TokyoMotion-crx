@@ -11,6 +11,14 @@ A chrome extension to download tokyomotion video directly from browser, via cURL
 
 <hr>
 
+## Build
+```sh
+npm i
+npm run gulp
+
+# built files in dist directory
+```
+
 ## Installation
 
 The avaible settings are currently only:
