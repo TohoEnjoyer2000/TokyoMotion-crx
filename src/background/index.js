@@ -3,7 +3,7 @@ const id = referer.split('/')[4]
 const title = document.getElementsByClassName("hidden-xs big-title-truncate m-t-0")[0].innerText
 const [sep] = document.getElementsByClassName("separator m-t-15 p-0")
 
-const [srcHD, srcSD] = Array.from(document.getElementById("vjsplayer_html5_api").childNodes)
+const [srcHD, srcSD] = Array.from(document.getElementsByTagName("video")[0].childNodes)
     .filter(node => node.nodeName.toLowerCase() === "source")
     .map(source => source.src)
 
