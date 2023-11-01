@@ -14,7 +14,7 @@ A chrome extension to download tokyomotion video directly from browser, via cURL
 ## Build
 ```sh
 npm i
-npm run gulp
+npm run build
 
 # built files in dist directory
 ```
@@ -23,6 +23,7 @@ npm run gulp
 
 The avaible settings are currently only:
 -   Go to chrome extensions tab
+-   Activate developer mode
 -   Load unpacked extension
 -   select tokyomotion-crx folder (manifetst.json folder)
 
